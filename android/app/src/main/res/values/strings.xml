@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">植物识别助手</string>
+    
+    <string name="tab_home">首页</string>
+    <string name="tab_explore">知识库</string>
+    <string name="tab_history">记录</string>
+    <string name="tab_profile">我的</string>
+    
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="phone">手机号</string>
+    <string name="password">密码</string>
+    <string name="no_account">没有账号？立即注册</string>
+    <string name="has_account">已有账号？立即登录</string>
+    
+    <string name="scan_hint">对准植物进行拍摄</string>
+    <string name="flashlight">手电筒</string>
+    <string name="album">相册</string>
+    <string name="capture">拍照</string>
+    
+    <string name="result_title">识别结果</string>
+    <string name="confidence">识别率</string>
+    <string name="toxic_high">剧毒植物</string>
+    <string name="toxic_low">微毒植物</string>
+    <string name="safe_plant">安全植物</string>
+    <string name="safety_guide">安全处置指南</string>
+    <string name="toxic_parts">有毒部位</string>
+    <string name="toxicity_symptoms">中毒症状</string>
+    <string name="emergency_advice">急救建议</string>
+    <string name="encyclopedia">百科科普</string>
+    <string name="family_genus">科属</string>
+    <string name="habitat">生境</string>
+    <string name="distribution">分布</string>
+    
+    <string name="share">分享</string>
+    <string name="comment">评论</string>
+    <string name="report_error">我有异议</string>
+    
+    <string name="explore_title">探索</string>
+    <string name="search_hint">搜索植物...</string>
+    <string name="provide_correction">提供更准确结果</string>
+    <string name="hot_discussions">热门讨论</string>
+    <string name="like">赞</string>
+    <string name="dislike">踩</string>
+    
+    <string name="profile_title">我的</string>
+    <string name="my_collection">我的图鉴</string>
+    <string name="my_contribution">我的贡献</string>
+    <string name="settings">设置</string>
+    <string name="logout">退出登录</string>
+    <string name="explore_count">探索</string>
+    <string name="danger_avoid_count">避险</string>
+    <string name="contribution_count">贡献</string>
+    <string name="plants">植物</string>
+    <string name="times">次数</string>
+    
+    <string name="filter_all">全部</string>
+    <string name="filter_safe">安全</string>
+    <string name="filter_low_toxic">微毒</string>
+    <string name="filter_high_toxic">剧毒</string>
+    
+    <string name="badge_beginner">🌱 见习植物学者</string>
+    <string name="badge_guardian">🛡️ 户外安全卫士</string>
+</resources>

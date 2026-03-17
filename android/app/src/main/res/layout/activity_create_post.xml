@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="发布帖子" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    <!-- 帖子类型选择 -->
+    <RadioGroup
+        android:id="@+id/rgPostType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rbCorrection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="纠错" />
+
+        <RadioButton
+            android:id="@+id/rbExperience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="经验" />
+    </RadioGroup>
+
+    <!-- 标题输入 -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="标题（可选）">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPostTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="100" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- 内容输入 -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:hint="分享你的识别结果或经验...">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPostContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:minLines="5"
+            android:maxLength="1000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- 图片选择区域 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSelectedImages"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- 关联识别记录 -->
+    <LinearLayout
+        android:id="@+id/layoutHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/tvHistoryLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="关联识别记录"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvHistoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择记录"
+            android:textSize="14sp"
+            android:textColor="@color/primary" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_right"
+            android:layout_marginStart="4dp" />
+    </LinearLayout>
+
+    <!-- 添加图片按钮 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加图片"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+    <!-- 发布按钮 -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPublish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="发布" />
+
+    </LinearLayout>
+
+</LinearLayout>

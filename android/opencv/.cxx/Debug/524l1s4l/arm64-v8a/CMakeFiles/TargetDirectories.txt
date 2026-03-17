@@ -1,0 +1,3 @@
+D:/project/danyizhiwushibie/android/opencv/.cxx/Debug/524l1s4l/arm64-v8a/CMakeFiles/opencv_jni_shared.dir
+D:/project/danyizhiwushibie/android/opencv/.cxx/Debug/524l1s4l/arm64-v8a/CMakeFiles/edit_cache.dir
+D:/project/danyizhiwushibie/android/opencv/.cxx/Debug/524l1s4l/arm64-v8a/CMakeFiles/rebuild_cache.dir

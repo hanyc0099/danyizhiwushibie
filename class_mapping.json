@@ -1,0 +1,354 @@
+{
+  "plants": [
+    {
+      "class_id": 1,
+      "name_en": "alocasia",
+      "name_cn": "海芋",
+      "toxicity_level": "high",
+      "search_keywords": ["海芋", "滴水观音", "alocasia", "alocasia odora"]
+    },
+    {
+      "class_id": 2,
+      "name_en": "oleander",
+      "name_cn": "夹竹桃",
+      "toxicity_level": "high",
+      "search_keywords": ["夹竹桃", "oleander", "nerium oleander"]
+    },
+    {
+      "class_id": 3,
+      "name_en": "datura",
+      "name_cn": "曼陀罗",
+      "toxicity_level": "high",
+      "search_keywords": ["曼陀罗", "datura", "datura stramonium"]
+    },
+    {
+      "class_id": 4,
+      "name_en": "gelsemium",
+      "name_cn": "钩吻",
+      "toxicity_level": "high",
+      "search_keywords": ["钩吻", "断肠草", "gelsemium"]
+    },
+    {
+      "class_id": 5,
+      "name_en": "water_hemlock",
+      "name_cn": "毒芹",
+      "toxicity_level": "high",
+      "search_keywords": ["毒芹", "water hemlock", "cicuta"]
+    },
+    {
+      "class_id": 6,
+      "name_en": "foxglove",
+      "name_cn": "毛地黄",
+      "toxicity_level": "high",
+      "search_keywords": ["毛地黄", "foxglove", "digitalis"]
+    },
+    {
+      "class_id": 7,
+      "name_en": "castor_bean",
+      "name_cn": "蓖麻",
+      "toxicity_level": "high",
+      "search_keywords": ["蓖麻", "castor bean", "ricinus"]
+    },
+    {
+      "class_id": 8,
+      "name_en": "monkshood",
+      "name_cn": "乌头",
+      "toxicity_level": "high",
+      "search_keywords": ["乌头", "monkshood", "aconitum"]
+    },
+    {
+      "class_id": 9,
+      "name_en": "yew",
+      "name_cn": "红豆杉",
+      "toxicity_level": "high",
+      "search_keywords": ["红豆杉", "yew", "taxus"]
+    },
+    {
+      "class_id": 10,
+      "name_en": "belladonna",
+      "name_cn": "颠茄",
+      "toxicity_level": "high",
+      "search_keywords": ["颠茄", "belladonna", "atropa"]
+    },
+    {
+      "class_id": 11,
+      "name_en": "daffodil",
+      "name_cn": "水仙",
+      "toxicity_level": "low",
+      "search_keywords": ["水仙花", "daffodil", "narcissus"]
+    },
+    {
+      "class_id": 12,
+      "name_en": "tulip",
+      "name_cn": "郁金香",
+      "toxicity_level": "low",
+      "search_keywords": ["郁金香", "tulip", "tulipa"]
+    },
+    {
+      "class_id": 13,
+      "name_en": "alocasia_macrorrhizos",
+      "name_cn": "姑婆芋",
+      "toxicity_level": "low",
+      "search_keywords": ["姑婆芋", "alocasia macrorrhizos"]
+    },
+    {
+      "class_id": 14,
+      "name_en": "pothos",
+      "name_cn": "绿萝",
+      "toxicity_level": "low",
+      "search_keywords": ["绿萝", "pothos", "epipremnum aureum"]
+    },
+    {
+      "class_id": 15,
+      "name_en": "poinsettia",
+      "name_cn": "一品红",
+      "toxicity_level": "low",
+      "search_keywords": ["一品红", "poinsettia", "euphorbia pulcherrima"]
+    },
+    {
+      "class_id": 16,
+      "name_en": "hydrangea",
+      "name_cn": "绣球花",
+      "toxicity_level": "low",
+      "search_keywords": ["绣球花", "hydrangea", "紫阳花"]
+    },
+    {
+      "class_id": 17,
+      "name_en": "lily_of_the_valley",
+      "name_cn": "铃兰",
+      "toxicity_level": "low",
+      "search_keywords": ["铃兰", "lily of the valley", "convallaria"]
+    },
+    {
+      "class_id": 18,
+      "name_en": "azalea",
+      "name_cn": "杜鹃花",
+      "toxicity_level": "low",
+      "search_keywords": ["杜鹃花", "azalea", "映山红"]
+    },
+    {
+      "class_id": 19,
+      "name_en": "wisteria",
+      "name_cn": "紫藤",
+      "toxicity_level": "low",
+      "search_keywords": ["紫藤", "wisteria", "紫藤花"]
+    },
+    {
+      "class_id": 20,
+      "name_en": "rhododendron",
+      "name_cn": "石楠",
+      "toxicity_level": "low",
+      "search_keywords": ["石楠花", "rhododendron"]
+    },
+    {
+      "class_id": 21,
+      "name_en": "morning_glory",
+      "name_cn": "牵牛花",
+      "toxicity_level": "low",
+      "search_keywords": ["牵牛花", "morning glory", "ipomoea"]
+    },
+    {
+      "class_id": 22,
+      "name_en": "lupine",
+      "name_cn": "羽扇豆",
+      "toxicity_level": "low",
+      "search_keywords": ["羽扇豆", "lupine", "鲁冰花"]
+    },
+    {
+      "class_id": 23,
+      "name_en": "delphinium",
+      "name_cn": "翠雀花",
+      "toxicity_level": "low",
+      "search_keywords": ["翠雀花", "delphinium", "飞燕草"]
+    },
+    {
+      "class_id": 24,
+      "name_en": "larkspur",
+      "name_cn": "飞燕草",
+      "toxicity_level": "low",
+      "search_keywords": ["飞燕草", "larkspur"]
+    },
+    {
+      "class_id": 25,
+      "name_en": "bleeding_heart",
+      "name_cn": "荷包牡丹",
+      "toxicity_level": "low",
+      "search_keywords": ["荷包牡丹", "bleeding heart", "dicentra"]
+    },
+    {
+      "class_id": 26,
+      "name_en": "rose",
+      "name_cn": "玫瑰",
+      "toxicity_level": "safe",
+      "search_keywords": ["玫瑰花", "rose", "rosa"]
+    },
+    {
+      "class_id": 27,
+      "name_en": "sunflower",
+      "name_cn": "向日葵",
+      "toxicity_level": "safe",
+      "search_keywords": ["向日葵", "sunflower", "helianthus"]
+    },
+    {
+      "class_id": 28,
+      "name_en": "lily",
+      "name_cn": "百合",
+      "toxicity_level": "safe",
+      "search_keywords": ["百合花", "lily", "lilium"]
+    },
+    {
+      "class_id": 29,
+      "name_en": "carnation",
+      "name_cn": "康乃馨",
+      "toxicity_level": "safe",
+      "search_keywords": ["康乃馨", "carnation", "dianthus"]
+    },
+    {
+      "class_id": 30,
+      "name_en": "chrysanthemum",
+      "name_cn": "菊花",
+      "toxicity_level": "safe",
+      "search_keywords": ["菊花", "chrysanthemum", "mum"]
+    },
+    {
+      "class_id": 31,
+      "name_en": "orchid",
+      "name_cn": "兰花",
+      "toxicity_level": "safe",
+      "search_keywords": ["兰花", "orchid", "phalaenopsis"]
+    },
+    {
+      "class_id": 32,
+      "name_en": "peony",
+      "name_cn": "牡丹",
+      "toxicity_level": "safe",
+      "search_keywords": ["牡丹花", "peony", "paeonia"]
+    },
+    {
+      "class_id": 33,
+      "name_en": "lotus",
+      "name_cn": "荷花",
+      "toxicity_level": "safe",
+      "search_keywords": ["荷花", "lotus", "莲花", "nelumbo"]
+    },
+    {
+      "class_id": 34,
+      "name_en": "jasmine",
+      "name_cn": "茉莉",
+      "toxicity_level": "safe",
+      "search_keywords": ["茉莉花", "jasmine", "jasminum"]
+    },
+    {
+      "class_id": 35,
+      "name_en": "gardenia",
+      "name_cn": "栀子花",
+      "toxicity_level": "safe",
+      "search_keywords": ["栀子花", "gardenia", "gardenia jasminoides"]
+    },
+    {
+      "class_id": 36,
+      "name_en": "hibiscus",
+      "name_cn": "扶桑",
+      "toxicity_level": "safe",
+      "search_keywords": ["扶桑花", "hibiscus", "朱槿"]
+    },
+    {
+      "class_id": 37,
+      "name_en": "camellia",
+      "name_cn": "山茶花",
+      "toxicity_level": "safe",
+      "search_keywords": ["山茶花", "camellia", "茶花"]
+    },
+    {
+      "class_id": 38,
+      "name_en": "magnolia",
+      "name_cn": "玉兰",
+      "toxicity_level": "safe",
+      "search_keywords": ["玉兰花", "magnolia", "白玉兰"]
+    },
+    {
+      "class_id": 39,
+      "name_en": "cherry_blossom",
+      "name_cn": "樱花",
+      "toxicity_level": "safe",
+      "search_keywords": ["樱花", "cherry blossom", "sakura"]
+    },
+    {
+      "class_id": 40,
+      "name_en": "plum_blossom",
+      "name_cn": "梅花",
+      "toxicity_level": "safe",
+      "search_keywords": ["梅花", "plum blossom", "prunus mume"]
+    },
+    {
+      "class_id": 41,
+      "name_en": "peach_blossom",
+      "name_cn": "桃花",
+      "toxicity_level": "safe",
+      "search_keywords": ["桃花", "peach blossom"]
+    },
+    {
+      "class_id": 42,
+      "name_en": "apple_blossom",
+      "name_cn": "苹果花",
+      "toxicity_level": "safe",
+      "search_keywords": ["苹果花", "apple blossom"]
+    },
+    {
+      "class_id": 43,
+      "name_en": "pear_blossom",
+      "name_cn": "梨花",
+      "toxicity_level": "safe",
+      "search_keywords": ["梨花", "pear blossom"]
+    },
+    {
+      "class_id": 44,
+      "name_en": "marigold",
+      "name_cn": "万寿菊",
+      "toxicity_level": "safe",
+      "search_keywords": ["万寿菊", "marigold", "tagetes"]
+    },
+    {
+      "class_id": 45,
+      "name_en": "petunia",
+      "name_cn": "矮牵牛",
+      "toxicity_level": "safe",
+      "search_keywords": ["矮牵牛", "petunia", "碧冬茄"]
+    },
+    {
+      "class_id": 46,
+      "name_en": "geranium",
+      "name_cn": "天竺葵",
+      "toxicity_level": "safe",
+      "search_keywords": ["天竺葵", "geranium", "pelargonium"]
+    },
+    {
+      "class_id": 47,
+      "name_en": "daisy",
+      "name_cn": "雏菊",
+      "toxicity_level": "safe",
+      "search_keywords": ["雏菊", "daisy", "bellis"]
+    },
+    {
+      "class_id": 48,
+      "name_en": "lavender",
+      "name_cn": "薰衣草",
+      "toxicity_level": "safe",
+      "search_keywords": ["薰衣草", "lavender", "lavandula"]
+    },
+    {
+      "class_id": 49,
+      "name_en": "snapdragon",
+      "name_cn": "金鱼草",
+      "toxicity_level": "safe",
+      "search_keywords": ["金鱼草", "snapdragon", "antirrhinum"]
+    },
+    {
+      "class_id": 50,
+      "name_en": "pansy",
+      "name_cn": "三色堇",
+      "toxicity_level": "safe",
+      "search_keywords": ["三色堇", "pansy", "viola"]
+    }
+  ]
+}
