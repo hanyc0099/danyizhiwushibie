@@ -1,0 +1,28 @@
+# 本地ONNX模型配置
+# 用于离线识别的本地模型
+
+local_model:
+  # 模型文件路径
+  model_path: "../models/flower_20class_resnet50.onnx"
+  labels_path: "../models/flower_20class_resnet50_labels.json"
+
+  # 推理参数
+  inference:
+    batch_size: 1
+    input_size: [224, 224, 3]             # 输入图像大小
+    confidence_threshold: 0.5               # 置信度阈值
+    top_k: 3                                # 返回Top K结果
+
+  # 模型信息
+  model:
+    name: "ResNet50"
+    class_count: 21
+    accuracy: 0.9835
+    version: "v1.0"
+    description: "21种常见花卉识别模型"
+
+  # 图像预处理
+  preprocessing:
+    mean: [0.485, 0.456, 0.406]           # ImageNet均值
+    std: [0.229, 0.224, 0.225]             # ImageNet标准差
+    resize_method: "bilinear"               # 调整大小方法

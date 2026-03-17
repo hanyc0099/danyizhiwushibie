@@ -1,0 +1,23 @@
+# 数据库配置
+
+database:
+  # MySQL配置
+  mysql:
+    host: "111.228.52.165"
+    port: 3306
+    user: "node_app"
+    password: "Hyc@2025"
+    database: "plant_recognition"
+    charset: "utf8mb4"
+
+  # 连接池配置
+  pool:
+    pool_size: 10                             # 连接池大小
+    max_overflow: 20                          # 最大溢出连接
+    pool_timeout: 30                          # 连接超时（秒）
+    pool_recycle: 3600                        # 连接回收时间（秒）
+
+  # SQLAlchemy配置
+  sqlalchemy:
+    echo: false                                 # 是否输出SQL语句
+    pool_pre_ping: true                        # 连接前检查连接

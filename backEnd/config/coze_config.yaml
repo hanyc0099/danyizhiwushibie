@@ -1,0 +1,23 @@
+# Coze智能体API配置
+# 注意：实际使用时请填写真实的Coze API信息
+
+coze:
+  # API配置
+  api:
+    endpoint: "https://api.coze.com/v1/chat"  # Coze API端点（待确认）
+    api_key: "your_coze_api_key_here"        # Coze API Key（待确认）
+    timeout: 10                              # 请求超时时间（秒）
+    max_retries: 3                           # 最大重试次数
+
+  # 识别参数
+  recognition:
+    model_name: "flower-recognition-v1"       # Coze模型名称
+    temperature: 0.7                        # 温度参数（0-1）
+    max_tokens: 1000                         # 最大token数
+    top_p: 0.9                               # Top P采样
+
+  # 降级配置
+  fallback:
+    enabled: true                             # 失败时是否降级到本地模型
+    threshold: 3                             # 连续失败多少次后降级
+    error_message: "在线识别暂时不可用，已切换到本地模型"
