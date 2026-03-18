@@ -33,7 +33,7 @@ public interface ApiService {
     Call<ApiResponse<RecognitionResponse>> recognizeImage(@Part MultipartBody.Part image);
     
     @GET("plants")
-    Call<ApiResponse<List<PlantInfo>>> getPlantList(@Query("page") int page, @Query("page_size") int pageSize);
+    Call<ApiResponse<PagedResponse<PlantInfo>>> getPlantList(@Query("page") int page, @Query("page_size") int pageSize);
 
     @GET("plants/{id}")
     Call<ApiResponse<PlantInfo>> getPlantDetail(@Path("id") int id);

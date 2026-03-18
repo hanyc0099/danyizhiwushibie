@@ -118,9 +118,18 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.HistoryV
                 return "";
             }
             try {
-                // 解析 ISO 8601 格式: 2026-03-14T00:49:39.439068
-                SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.getDefault());
-                Date date = inputFormat.parse(createdAt);
+                Date date = null;
+                
+                // 尝试解析 ISO 8601 格式: 2026-03-14T00:49:39.439068
+                if (createdAt.contains("T")) {
+                    SimpleDateFormat isoFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.getDefault());
+                    date = isoFormat.parse(createdAt);
+                } else {
+                    // 尝试解析普通格式: 2026-03-18 18:46:04
+                    SimpleDateFormat normalFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
+                    date = normalFormat.parse(createdAt);
+                }
+                
                 if (date != null) {
                     // 格式化为: 2026-03-14 00:49
                     SimpleDateFormat outputFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.getDefault());

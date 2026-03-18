@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.plantrecognition.app.R;
 import com.plantrecognition.app.network.ApiClient;
 import com.plantrecognition.app.network.ApiResponse;
+import com.plantrecognition.app.network.PagedResponse;
 import com.plantrecognition.app.network.PlantInfo;
 import com.plantrecognition.app.ui.plant.PlantDetailActivity;
 import java.util.ArrayList;
@@ -111,21 +112,36 @@ public class ExploreFragment extends Fragment implements PlantAdapter.OnPlantCli
 
     private void loadPlants() {
         ApiClient.getApiService().getPlantList(currentPage, PAGE_SIZE)
-                .enqueue(new Callback<ApiResponse<List<PlantInfo>>>() {
+                .enqueue(new Callback<ApiResponse<PagedResponse<PlantInfo>>>() {
                     @Override
-                    public void onResponse(Call<ApiResponse<List<PlantInfo>>> call, Response<ApiResponse<List<PlantInfo>>> response) {
+                    public void onResponse(Call<ApiResponse<PagedResponse<PlantInfo>>> call, Response<ApiResponse<PagedResponse<PlantInfo>>> response) {
                         if (response.isSuccessful() && response.body() != null) {
-                            ApiResponse<List<PlantInfo>> apiResponse = response.body();
+                            ApiResponse<PagedResponse<PlantInfo>> apiResponse = response.body();
                             if (apiResponse.isSuccess() && apiResponse.getData() != null) {
-                                plantList.addAll(apiResponse.getData());
-                                allPlants.addAll(apiResponse.getData());
-                                adapter.notifyDataSetChanged();
+                                PagedResponse<PlantInfo> pagedData = apiResponse.getData();
+                                if (pagedData.getItems() != null) {
+                                    plantList.addAll(pagedData.getItems());
+                                    allPlants.addAll(pagedData.getItems());
+                                    adapter.notifyDataSetChanged();
+                                }
+                            } else {
+                                String msg = apiResponse.getMessage() != null ? apiResponse.getMessage() : "数据加载失败";
+                                Toast.makeText(requireContext(), msg, Toast.LENGTH_SHORT).show();
+                            }
+                        } else {
+                            try {
+                                String errorBody = response.errorBody() != null ? response.errorBody().string() : "未知错误";
+                                android.util.Log.e("ExploreFragment", "加载失败: " + errorBody);
+                                Toast.makeText(requireContext(), "加载失败: " + response.code(), Toast.LENGTH_SHORT).show();
+                            } catch (Exception e) {
+                                Toast.makeText(requireContext(), "加载失败", Toast.LENGTH_SHORT).show();
                             }
                         }
                     }
 
                     @Override
-                    public void onFailure(Call<ApiResponse<List<PlantInfo>>> call, Throwable t) {
+                    public void onFailure(Call<ApiResponse<PagedResponse<PlantInfo>>> call, Throwable t) {
+                        android.util.Log.e("ExploreFragment", "网络请求失败", t);
                         Toast.makeText(requireContext(), "加载失败: " + t.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });
